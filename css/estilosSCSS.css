@@ -1,0 +1,458 @@
+/*Generales*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+}
+
+/* Header*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1001;
+  background-color: white;
+}
+
+.header__logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  color: black;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/*Multimedia*/
+.portada {
+  width: 100%;
+}
+
+.backgroundInfo {
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+
+#imgwapp {
+  width: 30px;
+  height: 30px;
+}
+
+#imgmail {
+  width: 30px;
+  height: 30px;
+}
+
+#imgubicacion {
+  width: 25px;
+  height: 30px;
+}
+
+/* Cards*/
+#grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info1 info2 info3";
+  -ms-grid-columns: (2, 2fr)[2];
+      grid-template-columns: repeat(2, 2, 2fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 400px;
+  background-color: #DCE0E6;
+  width: 100%;
+}
+
+.info1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info1;
+}
+
+.info2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: info2;
+}
+
+.info3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: info3;
+}
+
+.card3 {
+  border: none;
+  height: 270px;
+  border-radius: 100px;
+}
+
+/*Formulario*/
+.formularioGeneral {
+  text-align: center;
+  width: 100%;
+  text-align: center;
+}
+
+.formularioEspecifico {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  padding: 20px;
+}
+
+form {
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+}
+
+.inputForm {
+  background-color: #f8f8f8;
+  border-radius: 0.5em;
+  border: 1px solid #CCC;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.botonEnviar {
+  color: grey;
+  border-radius: 1em;
+  border: 1px solid #CCC;
+  font-size: 15px;
+}
+
+.botonLimpiar {
+  color: grey;
+  border-radius: 1em;
+  border: 1px solid #CCC;
+  font-size: 15px;
+}
+
+#solicitud {
+  font-size: 40px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #11A99D;
+}
+
+#gracias {
+  font-size: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: black;
+}
+
+/*Contacto*/
+.datos {
+  text-align: center;
+  margin: 0px;
+}
+
+.columna {
+  float: left;
+  width: 33%;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.datos__texto {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.datos__texto--contenido {
+  text-transform: none;
+  letter-spacing: 0px;
+  height: 30px;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.datos__texto--titulo {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 5px;
+}
+
+.textocontacto {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+a.textocontacto:hover {
+  color: #d1b19c;
+}
+
+/* Footer */
+footer {
+  color: #586875;
+  padding: 3px;
+  height: 3vh;
+  background-color: #f8f1e9;
+  border: none;
+  font-size: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 120px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*Responsive */
+@media screen and (min-width: 480px) and (max-width: 980px) {
+  .header__titulo {
+    font-size: 1em;
+  }
+  .header__logo {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  .columna {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+  }
+  .datos__texto--titulo {
+    font-size: 0em;
+  }
+  .footer {
+    font-size: 7px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  #grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "info1 info2 info3";
+    -ms-grid-columns: (2, 2fr)[2];
+        grid-template-columns: repeat(2, 2, 2fr);
+    margin: 20px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 450px;
+  }
+  .info1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: info1;
+  }
+  .info2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: info2;
+  }
+  .info3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: info3;
+  }
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    background-color: #e7e7e2;
+  }
+  .header__logo {
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .header__titulo span {
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    color: black;
+  }
+  .header__titulo {
+    font-size: 15px;
+    color: black;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    width: 200px;
+  }
+  .nav {
+    font-size: 15px;
+    color: black;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #f8f1e9;
+    height: 80px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__titulo {
+    font-size: 1em;
+  }
+  .header__logo {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  .columna {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+  }
+  .datos__texto--titulo {
+    font-size: 0em;
+  }
+  .footer {
+    font-size: 7px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  #grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "info1 info2 info3";
+    -ms-grid-columns: (2, 2fr)[2];
+        grid-template-columns: repeat(2, 2, 2fr);
+    margin: 20px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 1500px;
+  }
+  .info1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: info1;
+  }
+  .info2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: info2;
+  }
+  .info3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: info3;
+  }
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    background-color: #e7e7e2;
+  }
+  .header__logo {
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .header__titulo span {
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    color: black;
+  }
+  .header__titulo {
+    font-size: 15px;
+    color: black;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    width: 200px;
+  }
+  .nav {
+    font-size: 15px;
+    color: black;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #f8f1e9;
+    height: 80px;
+    display: block;
+  }
+}
+/*# sourceMappingURL=estilosSCSS.css.map */

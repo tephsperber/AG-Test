@@ -12,13 +12,8 @@
 
 body {
   font-size: 10px;
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
-h5 {
-  font-size: 20px;
-  font-family: "Open Sans Condensed", sans-serif;
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 /* Header*/
@@ -28,22 +23,58 @@ header {
   top: 0px;
   width: 100%;
   z-index: 1001;
-  background-color: white;
+  background-color: #f1ebeb;
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .header__logo {
   width: 150px;
-  height: 150px;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin: 0px;
+}
+
+.nav-link {
+  font-size: 17px;
+  letter-spacing: 2px;
+  width: auto;
+}
+
+.navbar-nav {
+  width: 900px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-link:hover {
+  background-color: white;
+  opacity: 60%;
+}
+
+.active {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 30px;
+  color: grey;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #a3e1e4;
+  opacity: 80%;
+  padding: 20px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   color: black;
-  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 /*Multimedia*/
@@ -51,408 +82,1697 @@ h2 {
   width: 100%;
 }
 
-.backgroundInfo {
-  border-radius: 20px;
-  background-color: white;
-  color: black;
+#imgwapp2 {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+#imgmail2 {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 }
 
 #imgwapp {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 }
 
 #imgmail {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 }
 
 #imgubicacion {
-  width: 25px;
-  height: 30px;
+  width: 35px;
+  height: 40px;
+  padding: 5px;
+}
+
+/*Botones portada*/
+.button1 {
+  position: absolute;
+  bottom: 12%;
+  left: 15%;
+}
+
+.button2 {
+  position: absolute;
+  bottom: 12%;
+  right: 15%;
+}
+
+.btn2 {
+  font-size: 10px;
+  color: black;
+  margin: 0 auto;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 0px solid;
+  opacity: 80%;
+  color: black;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+span {
+  font-size: 20px;
+  color: black;
+  margin: 0 auto;
+  background-color: #a3e1e4;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 0px solid;
+  opacity: 80%;
+  display: block;
+  margin-top: 2px;
+}
+
+.btn2:hover {
+  color: black;
+}
+
+a span:hover {
+  color: white;
+  background-color: black;
 }
 
 /* Cards*/
-#grid {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "info1 info2 info3";
-  -ms-grid-columns: (2, 2fr)[2];
-      grid-template-columns: repeat(2, 2, 2fr);
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 400px;
-  background-color: #DCE0E6;
+.fondo3 {
+  background-image: url(../img/fondocovid1.jpeg);
   width: 100%;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
-.info1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: info1;
+.card {
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 40px;
+  text-align: left;
+  font-size: 15px;
+  height: 400px;
+  -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+          box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+  color: black;
+  border: 2px solid white;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.info2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: info2;
+.card-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.info3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: info3;
+.card-group {
+  margin: 20px;
 }
 
-.card3 {
-  border: none;
-  height: 270px;
-  border-radius: 100px;
+h5 {
+  font-size: 20px;
+  text-align: left;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.btn {
+  font-size: 14px;
+  border: 5px solid #a3e1e4;
+  color: black;
+  margin: 0 auto;
+  width: auto;
+  background-color: white;
+  text-transform: uppercase;
+  margin-left: 5px;
+  border-radius: 0px;
+  opacity: 70%;
+}
+
+.btn:hover {
+  border: 5px solid #a3e1e4;
+  background-color: #a3e1e4;
+  color: black;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-left: 5px;
+  opacity: 70%;
+}
+
+.reset {
+  font-size: 15px;
+  text-align: center;
+  color: #057b80;
+  text-decoration: none;
+}
+
+.reset:hover {
+  font-size: 15px;
+  color: #057b80;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*Cotizador*/
+.fondo {
+  background-image: url(../img/fotocovid.jpeg);
+  width: 100%;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.formCotizador {
+  padding: 1em;
+  display: block;
+  width: 40%;
+  text-align: center;
+  opacity: 100%;
+}
+
+.inputForm2 {
+  background-color: #f8f8f8;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: auto;
+  padding: 10px;
+}
+
+select:focus {
+  outline: none;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+#calcular {
+  margin: 20px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  opacity: 70%;
+}
+
+#calcular:hover {
+  background-color: #a3e1e4;
+}
+
+.btnCalcular {
+  margin: 20px;
+  font-size: 15px;
+  color: black;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 5px solid #a3e1e4;
+}
+
+.btnCalcular:hover {
+  opacity: 70%;
+  border: 5px solid white;
+}
+
+#solicitud {
+  font-size: 40px;
+  text-align: center;
+  color: #057b80;
+  background-color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  opacity: 90%;
 }
 
 /*Formulario*/
-.formularioGeneral {
-  text-align: center;
+.fondo2 {
+  background-image: url(../img/contactanos2.png);
   width: 100%;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.center {
+  padding: 10px;
   text-align: center;
 }
 
-.formularioEspecifico {
-  display: inline-block;
-  text-align: center;
-  width: 40%;
-  padding: 20px;
-}
-
-form {
+.formContacto {
   padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
+  display: block;
+  width: 40%;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 150px;
+  margin-left: 60%;
 }
 
 .inputForm {
   background-color: #f8f8f8;
   border-radius: 0.5em;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   display: block;
   width: 100%;
   font-size: 15px;
   padding: 10px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
-.botonEnviar {
-  color: grey;
-  border-radius: 1em;
-  border: 1px solid #CCC;
+textarea:focus, input:focus {
+  outline: none;
+}
+
+#botonEnviar {
+  margin: 20px;
   font-size: 15px;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 5px solid #a3e1e4;
+}
+
+#botonEnviar:hover {
+  background-color: #a3e1e4;
+  color: black;
+  opacity: 70%;
+  border: 5px solid white;
 }
 
 .botonLimpiar {
-  color: grey;
-  border-radius: 1em;
-  border: 1px solid #CCC;
+  margin: 20px;
   font-size: 15px;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  text-transform: uppercase;
+  opacity: 70%;
+  border: 1px solid black;
 }
 
-#solicitud {
-  font-size: 40px;
-  font-family: "Open Sans Condensed", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  color: #11A99D;
+.botonLimpiar:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
 
-#gracias {
-  font-size: 20px;
-  font-family: "Open Sans Condensed", sans-serif;
+h3 {
+  font-size: 25px;
   text-align: center;
   color: black;
 }
 
-/*Contacto*/
+#gracias {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  color: #057b80;
+  background-color: white;
+  opacity: 70%;
+  margin: 0px;
+  margin-left: 60%;
+}
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+}
+
+/*Footer*/
+.padre {
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  text-align: center;
+  height: 70px;
+}
+
+.hijo {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.columna {
+  width: 33%;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
 .datos {
   text-align: center;
   margin: 0px;
 }
 
-.columna {
-  float: left;
-  width: 33%;
-  margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.datos__texto {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: black;
-}
-
 .datos__texto--contenido {
   text-transform: none;
   letter-spacing: 0px;
-  height: 30px;
-  padding: 10px;
-  padding-bottom: 50px;
-}
-
-.datos__texto--titulo {
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 20px;
-  padding: 5px;
+  display: inline;
+  text-align: center;
 }
 
 .textocontacto {
   text-decoration: none;
-  color: black;
+  color: grey;
   padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 a.textocontacto:hover {
-  color: #d1b19c;
+  color: #11a99d;
+  text-decoration: underline;
 }
 
-/* Footer */
 footer {
-  color: #586875;
-  padding: 3px;
-  height: 3vh;
-  background-color: #f8f1e9;
-  border: none;
-  font-size: 10px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 120px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
 }
 
-/*Responsive */
-@media screen and (min-width: 480px) and (max-width: 980px) {
-  .header__titulo {
-    font-size: 1em;
-  }
-  .header__logo {
-    max-width: 40px;
-    max-height: 40px;
-    margin: 10px;
-  }
-  h2 {
-    font-size: 20px;
-    padding: 20px;
-  }
-  footer {
-    font-size: 10px;
-  }
-  .columna {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 70px;
-  }
-  .datos__texto--titulo {
-    font-size: 0em;
-  }
-  .footer {
-    font-size: 7px;
-  }
-  h5 {
-    font-size: 20px;
-  }
-  #grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "info1 info2 info3";
-    -ms-grid-columns: (2, 2fr)[2];
-        grid-template-columns: repeat(2, 2, 2fr);
-    margin: 20px;
-    justify-items: center;
+/*Responsive Medio Grande*/
+@media screen and (min-width: 950px) and (max-width: 1290px) {
+  /*Generales*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 450px;
   }
-  .info1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: info1;
+  body {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
   }
-  .info2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: info2;
-  }
-  .info3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: info3;
-  }
+  /* Header*/
   header {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
     width: 100%;
     z-index: 1001;
-    background-color: #e7e7e2;
+    background-color: #f1ebeb;
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
   .header__logo {
-    width: 35px;
-    height: 30px;
-    margin-right: 10px;
+    width: 150px;
+    margin: 0px;
   }
-  .header__titulo span {
-    font-size: 20px;
-    font-family: "Dancing Script", cursive;
-    font-weight: 600;
-    color: black;
-  }
-  .header__titulo {
-    font-size: 15px;
-    color: black;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: 300;
+  .nav-link {
+    font-size: 17px;
     letter-spacing: 2px;
-    text-transform: lowercase;
-    width: 200px;
+    width: auto;
   }
-  .nav {
-    font-size: 15px;
-    color: black;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: 300;
-    letter-spacing: 2px;
+  .navbar-nav {
+    width: 900px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav-link:hover {
+    background-color: white;
+    opacity: 60%;
+  }
+  .active {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 5px;
+    text-align: center;
     text-transform: uppercase;
+    background-color: #a3e1e4;
+    opacity: 80%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  /*Multimedia*/
+  .portada {
     width: 100%;
-    background-color: #f8f1e9;
-    height: 80px;
+  }
+  #imgwapp2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgmail2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgwapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgmail {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgubicacion {
+    width: 35px;
+    height: 40px;
+    padding: 5px;
+  }
+  /*Botones portada*/
+  .button1 {
+    position: absolute;
+    bottom: 32%;
+    left: 15%;
+  }
+  .button2 {
+    position: absolute;
+    bottom: 32%;
+    right: 15%;
+  }
+  .btn2 {
+    font-size: 10px;
+    color: black;
+    margin: 0 auto;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    color: black;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+  }
+  span {
+    font-size: 20px;
+    color: black;
+    margin: 0 auto;
+    background-color: #a3e1e4;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
     display: block;
+    margin-top: 2px;
+  }
+  .btn2:hover {
+    color: black;
+  }
+  a span:hover {
+    color: white;
+    background-color: black;
+  }
+  /* Cards*/
+  .fondo3 {
+    background-image: url(../img/fondocovid1.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .card {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 12px;
+    height: 350px;
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .card-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .card-group {
+    margin: 20px;
+  }
+  .btn {
+    font-size: 12px;
+    border: 5px solid #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    width: auto;
+    background-color: white;
+    text-transform: uppercase;
+    margin-left: 5px;
+    border-radius: 0px;
+    opacity: 70%;
+  }
+  .btn:hover {
+    border: 5px solid #a3e1e4;
+    background-color: #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-left: 5px;
+    opacity: 70%;
+  }
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .reset {
+    font-size: 12px;
+    text-align: center;
+    color: #057b80;
+    text-decoration: none;
+  }
+  .reset:hover {
+    font-size: 15px;
+    color: #057b80;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  /*Cotizador*/
+  .fondo {
+    background-image: url(../img/fotocovid.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  .formCotizador {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    opacity: 100%;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+    padding: 10px;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #calcular {
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 70%;
+  }
+  #calcular:hover {
+    background-color: #a3e1e4;
+  }
+  .btnCalcular {
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  .btnCalcular:hover {
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  #solicitud {
+    font-size: 40px;
+    text-align: center;
+    color: #057b80;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+  }
+  /*Formulario*/
+  .fondo2 {
+    background-image: url(../img/contactanos2.png);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .center {
+    padding: 10px;
+    text-align: center;
+  }
+  .formContacto {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-left: 60%;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  select:focus {
+    outline: none;
+  }
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  #botonEnviar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  #botonEnviar:hover {
+    background-color: #a3e1e4;
+    color: black;
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  .botonLimpiar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    border: 1px solid black;
+  }
+  .botonLimpiar:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+    margin-left: 40%;
+  }
+  h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  /*Footer*/
+  .padre {
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 70px;
+  }
+  .hijo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .columna {
+    width: 33%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  .datos {
+    text-align: center;
+    margin: 0px;
+  }
+  .datos__texto--contenido {
+    text-transform: none;
+    letter-spacing: 0px;
+    display: inline;
+    text-align: center;
+  }
+  .textocontacto {
+    text-decoration: none;
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  a.textocontacto:hover {
+    color: #11a99d;
+    text-decoration: underline;
+  }
+  footer {
+    margin: 0px;
   }
 }
 
+/* Responsive Medio Chico */
+@media screen and (min-width: 480px) and (max-width: 950px) {
+  /*Generales*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  /* Header*/
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    background-color: #f1ebeb;
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  }
+  .header__logo {
+    width: 150px;
+    margin: 0px;
+  }
+  .nav-link {
+    font-size: 17px;
+    letter-spacing: 2px;
+    width: auto;
+  }
+  .navbar-nav {
+    width: 900px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav-link:hover {
+    background-color: white;
+    opacity: 60%;
+  }
+  .active {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #a3e1e4;
+    opacity: 80%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  /*Multimedia*/
+  .portada {
+    width: 100%;
+  }
+  #imgwapp2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgmail2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgwapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgmail {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgubicacion {
+    width: 35px;
+    height: 40px;
+    padding: 5px;
+  }
+  /*Botones portada*/
+  .button1 {
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+  }
+  .button2 {
+    position: absolute;
+    bottom: 50%;
+    right: 15%;
+  }
+  .btn2 {
+    font-size: 10px;
+    color: black;
+    margin: 0 auto;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    color: black;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+  }
+  span {
+    font-size: 20px;
+    color: black;
+    margin: 0 auto;
+    background-color: #a3e1e4;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    display: block;
+    margin-top: 2px;
+  }
+  .btn2:hover {
+    color: black;
+  }
+  a span:hover {
+    color: white;
+    background-color: black;
+  }
+  /* Cards*/
+  .fondo3 {
+    background-image: url(../img/fondocovid1.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .card {
+    display: block;
+    font-size: 15px;
+    width: 80%;
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .card-group {
+    display: block;
+  }
+  .btn {
+    font-size: 15px;
+    border: 5px solid #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    width: auto;
+    background-color: white;
+    text-transform: uppercase;
+    margin-left: 5px;
+    border-radius: 0px;
+    opacity: 70%;
+  }
+  .btn:hover {
+    border: 5px solid #a3e1e4;
+    background-color: #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-left: 5px;
+    opacity: 70%;
+  }
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .reset {
+    font-size: 15px;
+    text-align: center;
+    color: #057b80;
+    text-decoration: none;
+  }
+  .reset:hover {
+    font-size: 15px;
+    color: #057b80;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  /*Cotizador*/
+  .fondo {
+    background-image: url(../img/fotocovid.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-bottom: 20px;
+  }
+  .formCotizador {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    opacity: 100%;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+    padding: 10px;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #calcular {
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 70%;
+  }
+  #calcular:hover {
+    background-color: #a3e1e4;
+  }
+  .btnCalcular {
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  .btnCalcular:hover {
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  #solicitud {
+    font-size: 30px;
+    text-align: center;
+    color: #057b80;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+  }
+  /*Formulario*/
+  .fondo2 {
+    background-image: url(../img/contactanos2.png);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .center {
+    padding: 10px;
+    text-align: center;
+  }
+  .formContacto {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-left: 60%;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  select:focus {
+    outline: none;
+  }
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  #botonEnviar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  #botonEnviar:hover {
+    background-color: #a3e1e4;
+    color: black;
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  .botonLimpiar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    border: 1px solid black;
+  }
+  .botonLimpiar:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+    margin-left: 40%;
+  }
+  h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  /*Footer*/
+  .padre {
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 70px;
+  }
+  .hijo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .columna {
+    width: 33%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  .datos {
+    text-align: center;
+    margin: 0px;
+  }
+  .datos__texto--contenido {
+    text-transform: none;
+    letter-spacing: 0px;
+    display: inline;
+    text-align: center;
+  }
+  .textocontacto {
+    text-decoration: none;
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  a.textocontacto:hover {
+    color: #11a99d;
+    text-decoration: underline;
+  }
+  footer {
+    margin: 0px;
+  }
+}
+
+/* Responsive Celular */
 @media screen and (max-width: 480px) {
-  .header__titulo {
-    font-size: 1em;
-  }
-  .header__logo {
-    max-width: 40px;
-    max-height: 40px;
-    margin: 10px;
-  }
-  h2 {
-    font-size: 20px;
-    padding: 20px;
-  }
-  footer {
-    font-size: 10px;
-  }
-  .columna {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 70px;
-  }
-  .datos__texto--titulo {
-    font-size: 0em;
-  }
-  .footer {
-    font-size: 7px;
-  }
-  h5 {
-    font-size: 20px;
-  }
-  #grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "info1 info2 info3";
-    -ms-grid-columns: (2, 2fr)[2];
-        grid-template-columns: repeat(2, 2, 2fr);
-    margin: 20px;
-    justify-items: center;
+  /*Generales*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 1500px;
   }
-  .info1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: info1;
+  body {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
   }
-  .info2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: info2;
-  }
-  .info3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: info3;
-  }
+  /* Header*/
   header {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
     width: 100%;
     z-index: 1001;
-    background-color: #e7e7e2;
+    background-color: #f1ebeb;
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
   .header__logo {
-    width: 35px;
-    height: 30px;
-    margin-right: 10px;
+    width: 150px;
+    margin: 0px;
   }
-  .header__titulo span {
-    font-size: 20px;
-    font-family: "Dancing Script", cursive;
-    font-weight: 600;
-    color: black;
-  }
-  .header__titulo {
+  .nav-link {
     font-size: 15px;
-    color: black;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: 300;
     letter-spacing: 2px;
-    text-transform: lowercase;
-    width: 200px;
+    width: auto;
+    margin-right: 100px;
   }
-  .nav {
-    font-size: 15px;
-    color: black;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: 300;
-    letter-spacing: 2px;
+  .nav-link:hover {
+    background-color: white;
+    opacity: 60%;
+  }
+  .active {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 5px;
+    text-align: center;
     text-transform: uppercase;
+    background-color: #a3e1e4;
+    opacity: 80%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  /*Multimedia*/
+  .portada {
     width: 100%;
-    background-color: #f8f1e9;
-    height: 80px;
+  }
+  #imgwapp2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgmail2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgwapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgmail {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgubicacion {
+    width: 35px;
+    height: 40px;
+    padding: 5px;
+  }
+  /*Botones portada*/
+  .button1 {
+    position: absolute;
+    bottom: 65%;
+    left: 5%;
+  }
+  .button2 {
+    position: absolute;
+    bottom: 65%;
+    right: 5%;
+  }
+  .btn2 {
+    font-size: 8px;
+    color: black;
+    margin: 0 auto;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    color: black;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+  }
+  span {
+    font-size: 13px;
+    color: black;
+    margin: 0 auto;
+    background-color: #a3e1e4;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
     display: block;
+    margin-top: 2px;
+    font-weight: bold;
+  }
+  .btn2:hover {
+    color: black;
+  }
+  a span:hover {
+    color: white;
+    background-color: black;
+  }
+  /* Cards*/
+  .fondo3 {
+    background-image: url(../img/fondocovid1.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .card {
+    display: block;
+    font-size: 15px;
+    width: 80%;
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .card-group {
+    display: block;
+  }
+  .btn {
+    font-size: 15px;
+    border: 5px solid #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    width: auto;
+    background-color: white;
+    text-transform: uppercase;
+    margin-left: 5px;
+    border-radius: 0px;
+    opacity: 70%;
+  }
+  .btn:hover {
+    border: 5px solid #a3e1e4;
+    background-color: #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-left: 5px;
+    opacity: 70%;
+  }
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .reset {
+    font-size: 15px;
+    text-align: center;
+    color: #057b80;
+    text-decoration: none;
+  }
+  .reset:hover {
+    font-size: 15px;
+    color: #057b80;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  /*Cotizador*/
+  .fondo {
+    background-image: url(../img/fotocovid.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-bottom: 20px;
+  }
+  .formCotizador {
+    padding: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 100%;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+    padding: 10px;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #calcular {
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 70%;
+  }
+  #calcular:hover {
+    background-color: #a3e1e4;
+  }
+  .btnCalcular {
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  .btnCalcular:hover {
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  #solicitud {
+    font-size: 30px;
+    text-align: center;
+    color: #057b80;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 20px;
+    opacity: 90%;
+  }
+  /*Formulario*/
+  .fondo2 {
+    background-image: url(../img/contactanos2.png);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 20px;
+    margin-left: 0px;
+  }
+  .center {
+    padding: 10px;
+    text-align: center;
+    background-color: #f1ebeb;
+    padding: 10px;
+    color: black;
+    margin-bottom: 4px;
+    border-radius: 20px;
+  }
+  .formContacto {
+    padding: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  select:focus {
+    outline: none;
+  }
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  #botonEnviar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  #botonEnviar:hover {
+    background-color: #a3e1e4;
+    color: black;
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  .botonLimpiar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    border: 1px solid black;
+  }
+  .botonLimpiar:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+  }
+  h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  /*Footer*/
+  .padre {
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: auto;
+  }
+  .hijo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .columna {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+  }
+  .datos {
+    text-align: center;
+    margin: 0px;
+  }
+  .datos__texto--contenido {
+    text-transform: none;
+    letter-spacing: 0px;
+    display: inline;
+    text-align: center;
+  }
+  .textocontacto {
+    text-decoration: none;
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+  }
+  a.textocontacto:hover {
+    color: #11a99d;
+    text-decoration: underline;
+  }
+  footer {
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=estilosSCSS.css.map */

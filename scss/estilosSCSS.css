@@ -1,486 +1,3 @@
-/*Responsive */
-@media screen and (min-width: 480px) and (max-width: 1180px) {
-  .padretop {
-    display: none;
-  }
-  .menuHover {
-    font-size: 25px;
-    text-align: left;
-  }
-  .menuHover:hover {
-    background-color: #84ced1;
-    opacity: 50%;
-  }
-  .portada {
-    width: 100%;
-    margin-bottom: 140px;
-  }
-  header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    z-index: 1001;
-    background-color: white;
-    border-bottom: 1px solid grey;
-  }
-  .header__logo {
-    width: 200px;
-    margin: 10px;
-  }
-  .nav-link {
-    margin: 0px;
-  }
-  .card {
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    height: 250px;
-    background-color: #057b80;
-    color: white;
-    border: 2px solid white;
-    margin-left: 0px;
-  }
-  .card2 {
-    background-color: #84ced1;
-  }
-  .card-img-top {
-    width: 30px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-  .card-title {
-    font-size: 25px;
-    margin: 0px;
-    margin-bottom: 10px;
-  }
-  .card-group {
-    display: block;
-  }
-  h5 {
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "cotizador fotoCotizador";
-    -ms-grid-columns: (2fr)[2];
-        grid-template-columns: repeat(2 2fr);
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-bottom: 70px;
-    margin-top: 50px;
-    background-color: lightgrey;
-  }
-  .fotoCotizador {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: fotoCotizador;
-  }
-  .cotizador {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: cotizador;
-  }
-  .fotoCotizador {
-    width: 100%;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  h2 {
-    font-size: 20px;
-    color: #057b80;
-    font-weight: 300;
-    letter-spacing: 0px;
-    text-align: center;
-    font-weight: bold;
-    margin: 0px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .inputForm {
-    background-color: #f8f8f8;
-    border-radius: 0.5em;
-    border: 1px solid #ccc;
-    display: block;
-    width: 100%;
-    font-size: 12px;
-    padding: 5px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  #calcular {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 15px;
-    background-color: white;
-    border: 1px solid #057b80;
-    color: #057b80;
-  }
-  .btn {
-    font-size: 20px;
-    background-color: white;
-    border: 1px solid #057b80;
-    color: #057b80;
-  }
-  .fotoContactanos {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    width: 400px;
-    margin-bottom: 10px;
-  }
-  .padre {
-    background-color: white;
-    text-align: center;
-    position: none;
-    display: block;
-  }
-  .hijo {
-    position: none;
-    text-align: center;
-    color: black;
-    margin-top: 100px;
-    display: block;
-  }
-  .margen {
-    margin-top: 50px;
-  }
-  .columna {
-    width: 100%;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid lightgrey;
-  }
-  .datos {
-    text-align: center;
-    margin: 0px;
-    margin-top: 10px;
-    border-top: none;
-  }
-  .datos__texto--titulo {
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 20px;
-    padding: 5px;
-    display: block;
-    text-align: center;
-  }
-  .datos__texto--contenido {
-    text-transform: none;
-    letter-spacing: 0px;
-    height: 30px;
-    padding: 0px;
-    padding-bottom: 50px;
-    display: inline;
-    text-align: center;
-  }
-  .textocontacto {
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  a.textocontacto:hover {
-    color: #11a99d;
-  }
-  #solicitud {
-    font-size: 30px;
-    text-align: center;
-    color: #057b80;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  #gracias {
-    font-size: 15px;
-    text-align: center;
-    color: black;
-    padding: 10px;
-    background-color: #84ced1;
-    opacity: 50%;
-  }
-  h3 {
-    font-size: 20px;
-    text-align: center;
-    color: black;
-  }
-  #imgwapp {
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  #imgmail {
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  #imgubicacion {
-    width: 25px;
-    height: 30px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  .center2 {
-    margin: auto;
-    padding: 0px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .padretop {
-    display: none;
-  }
-  .menuHover {
-    font-size: 15px;
-    text-align: left;
-  }
-  .menuHover:hover {
-    background-color: #84ced1;
-    opacity: 50%;
-  }
-  .portada {
-    width: 100%;
-    margin-bottom: 140px;
-  }
-  header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    z-index: 1001;
-    background-color: white;
-    border-bottom: 1px solid grey;
-  }
-  .header__logo {
-    width: 100px;
-    margin: 10px;
-  }
-  .nav-link {
-    margin: 0px;
-  }
-  .card {
-    width: 100%;
-    text-align: center;
-    font-size: 10px;
-    height: 250px;
-    background-color: #057b80;
-    color: white;
-    border: 2px solid white;
-    margin-left: 0px;
-  }
-  .card2 {
-    background-color: #84ced1;
-  }
-  .card-img-top {
-    width: 30px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-  .card-title {
-    font-size: 25px;
-    margin: 0px;
-    margin-bottom: 10px;
-  }
-  .card-group {
-    display: block;
-  }
-  h5 {
-    font-size: 15px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "fotoCotizador cotizador ";
-    -ms-grid-columns: (2fr)[2];
-        grid-template-columns: repeat(2 2fr);
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    background-color: lightgrey;
-    display: block;
-  }
-  .fotoCotizador {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: fotoCotizador;
-  }
-  .cotizador {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: cotizador;
-  }
-  .fotoCotizador {
-    width: 100%;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  h2 {
-    font-size: 20px;
-    color: #057b80;
-    font-weight: 300;
-    letter-spacing: 0px;
-    text-align: center;
-    font-weight: bold;
-    margin: 0px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .inputForm {
-    background-color: #f8f8f8;
-    border-radius: 0.5em;
-    border: 1px solid #ccc;
-    display: block;
-    width: 100%;
-    font-size: 12px;
-    padding: 5px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  #calcular {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 15px;
-    background-color: white;
-    border: 1px solid #057b80;
-    color: #057b80;
-  }
-  .btn {
-    font-size: 15px;
-    background-color: white;
-    border: 1px solid #057b80;
-    color: #057b80;
-  }
-  .fotoContactanos {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    width: 200px;
-    margin-bottom: 10px;
-  }
-  .padre {
-    background-color: white;
-    text-align: center;
-    position: none;
-    display: block;
-  }
-  .hijo {
-    position: none;
-    text-align: center;
-    color: black;
-    margin-top: 100px;
-    display: block;
-  }
-  .margen {
-    margin-top: 50px;
-  }
-  .columna {
-    width: 100%;
-    padding: 10px;
-    display: block;
-    text-align: center;
-  }
-  h3 {
-    font-size: 20px;
-    text-align: center;
-    color: black;
-  }
-  #gracias {
-    font-size: 15px;
-    text-align: center;
-    color: black;
-    padding: 10px;
-    background-color: #84ced1;
-    opacity: 50%;
-    margin: 0px;
-  }
-  .datos {
-    text-align: center;
-    margin: 0px;
-    border-top: none;
-  }
-  .datos__texto--titulo {
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 20px;
-    padding: 5px;
-    display: block;
-    text-align: center;
-  }
-  .datos__texto--contenido {
-    text-transform: none;
-    letter-spacing: 0px;
-    height: 30px;
-    padding: 0px;
-    padding-bottom: 50px;
-    display: inline;
-    text-align: center;
-  }
-  .textocontacto {
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  a.textocontacto:hover {
-    color: #11a99d;
-  }
-  #imgwapp {
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  #imgmail {
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  #imgubicacion {
-    width: 25px;
-    height: 30px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  .center2 {
-    margin: auto;
-    padding: 0px;
-  }
-}
-
 /*Generales*/
 * {
   margin: 0;
@@ -516,20 +33,17 @@ header {
   margin: 0px;
 }
 
-.left {
-  width: 40%;
-}
-
-.right {
-  display: inline;
-  text-align: right;
+.nav-link {
   font-size: 17px;
   letter-spacing: 2px;
+  width: auto;
 }
 
-.nav-link {
-  margin-right: 20px;
-  margin-left: 70px;
+.navbar-nav {
+  width: 900px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .nav-link:hover {
@@ -543,12 +57,12 @@ header {
 
 h1 {
   font-size: 30px;
-  color: black;
+  color: grey;
   letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
   background-color: #a3e1e4;
-  opacity: 50%;
+  opacity: 80%;
   padding: 20px;
 }
 
@@ -568,18 +82,16 @@ h2 {
   width: 100%;
 }
 
-.fotoCotizador {
-  width: 80%;
-  margin: 0px;
-  display: block;
-  margin-left: auto;
+#imgwapp2 {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 }
 
-.fotoContactanos {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
+#imgmail2 {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 }
 
 #imgwapp {
@@ -603,14 +115,14 @@ h2 {
 /*Botones portada*/
 .button1 {
   position: absolute;
-  bottom: 10%;
-  left: 25%;
+  bottom: 12%;
+  left: 15%;
 }
 
 .button2 {
   position: absolute;
-  bottom: 10%;
-  right: 25%;
+  bottom: 12%;
+  right: 15%;
 }
 
 .btn2 {
@@ -658,16 +170,17 @@ a span:hover {
   margin: 0px;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 .card {
   display: inline-block;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 40px;
+  margin-left: 40px;
   text-align: left;
   font-size: 15px;
-  height: 350px;
+  height: 400px;
   -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
           box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
   color: black;
@@ -694,6 +207,29 @@ h5 {
   font-weight: 500;
 }
 
+.btn {
+  font-size: 14px;
+  border: 5px solid #a3e1e4;
+  color: black;
+  margin: 0 auto;
+  width: auto;
+  background-color: white;
+  text-transform: uppercase;
+  margin-left: 5px;
+  border-radius: 0px;
+  opacity: 70%;
+}
+
+.btn:hover {
+  border: 5px solid #a3e1e4;
+  background-color: #a3e1e4;
+  color: black;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-left: 5px;
+  opacity: 70%;
+}
+
 .reset {
   font-size: 15px;
   text-align: center;
@@ -708,7 +244,7 @@ h5 {
   text-decoration: underline;
 }
 
-/*Formulario*/
+/*Cotizador*/
 .fondo {
   background-image: url(../img/fotocovid.jpeg);
   width: 100%;
@@ -718,47 +254,12 @@ h5 {
   height: 600px;
 }
 
-.fondo2 {
-  background-image: url(../img/contactanos2.png);
-  width: 100%;
-  margin: 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-}
-
 .formCotizador {
   padding: 1em;
   display: block;
   width: 40%;
   text-align: center;
-  opacity: 70%;
-}
-
-.center {
-  padding: 10px;
-  text-align: center;
-}
-
-.formContacto {
-  padding: 1em;
-  display: block;
-  width: 40%;
-  text-align: center;
-  margin-left: 60%;
-}
-
-.inputForm {
-  background-color: #f8f8f8;
-  border-radius: 0.5em;
-  border: 1px solid #ccc;
-  display: block;
-  width: 100%;
-  font-size: 15px;
-  padding: 10px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  opacity: 100%;
 }
 
 .inputForm2 {
@@ -773,6 +274,10 @@ h5 {
   font-weight: 300;
   margin: auto;
   padding: 10px;
+}
+
+select:focus {
+  outline: none;
 }
 
 label {
@@ -815,27 +320,56 @@ label {
   border: 5px solid white;
 }
 
-.btn {
-  font-size: 14px;
-  border: 5px solid #a3e1e4;
-  color: black;
-  margin: 0 auto;
-  width: 35%;
+#solicitud {
+  font-size: 40px;
+  text-align: center;
+  color: #057b80;
   background-color: white;
-  text-transform: uppercase;
-  margin-left: 5px;
-  border-radius: 0px;
-  opacity: 70%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  opacity: 90%;
 }
 
-.btn:hover {
-  border: 5px solid #a3e1e4;
-  background-color: #a3e1e4;
-  color: black;
-  margin: 0 auto;
-  text-transform: uppercase;
-  margin-left: 5px;
-  opacity: 70%;
+/*Formulario*/
+.fondo2 {
+  background-image: url(../img/contactanos2.png);
+  width: 100%;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.center {
+  padding: 10px;
+  text-align: center;
+}
+
+.formContacto {
+  padding: 1em;
+  display: block;
+  width: 40%;
+  text-align: center;
+  margin-left: 60%;
+}
+
+.inputForm {
+  background-color: #f8f8f8;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+textarea:focus, input:focus {
+  outline: none;
 }
 
 #botonEnviar {
@@ -878,15 +412,6 @@ label {
   border: 1px solid white;
 }
 
-#solicitud {
-  font-size: 40px;
-  text-align: center;
-  color: #057b80;
-  background-color: white;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
 h3 {
   font-size: 25px;
   text-align: center;
@@ -899,7 +424,7 @@ h3 {
   padding: 10px;
   color: #057b80;
   background-color: white;
-  opacity: 50%;
+  opacity: 70%;
   margin: 0px;
   margin-left: 60%;
 }
@@ -935,18 +460,6 @@ h4 {
   margin: 0px;
 }
 
-/*.datos__texto--titulo {
-	text-transform: uppercase;
-	font-size: 1.3em;
-	font-weight: bold;
-	line-height: 20px;
-	padding: 5px;
-	display: block;
-	text-align: center;
-	color: grey;
-	letter-spacing: 1px;
-	text-decoration: underline;
-}*/
 .datos__texto--contenido {
   text-transform: none;
   letter-spacing: 0px;
@@ -970,5 +483,1296 @@ a.textocontacto:hover {
 
 footer {
   margin: 0px;
+}
+
+/*Responsive Medio Grande*/
+@media screen and (min-width: 950px) and (max-width: 1290px) {
+  /*Generales*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  /* Header*/
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    background-color: #f1ebeb;
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  }
+  .header__logo {
+    width: 150px;
+    margin: 0px;
+  }
+  .nav-link {
+    font-size: 17px;
+    letter-spacing: 2px;
+    width: auto;
+  }
+  .navbar-nav {
+    width: 900px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav-link:hover {
+    background-color: white;
+    opacity: 60%;
+  }
+  .active {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #a3e1e4;
+    opacity: 80%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  /*Multimedia*/
+  .portada {
+    width: 100%;
+  }
+  #imgwapp2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgmail2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgwapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgmail {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgubicacion {
+    width: 35px;
+    height: 40px;
+    padding: 5px;
+  }
+  /*Botones portada*/
+  .button1 {
+    position: absolute;
+    bottom: 32%;
+    left: 15%;
+  }
+  .button2 {
+    position: absolute;
+    bottom: 32%;
+    right: 15%;
+  }
+  .btn2 {
+    font-size: 10px;
+    color: black;
+    margin: 0 auto;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    color: black;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+  }
+  span {
+    font-size: 20px;
+    color: black;
+    margin: 0 auto;
+    background-color: #a3e1e4;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    display: block;
+    margin-top: 2px;
+  }
+  .btn2:hover {
+    color: black;
+  }
+  a span:hover {
+    color: white;
+    background-color: black;
+  }
+  /* Cards*/
+  .fondo3 {
+    background-image: url(../img/fondocovid1.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .card {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 12px;
+    height: 350px;
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .card-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .card-group {
+    margin: 20px;
+  }
+  .btn {
+    font-size: 12px;
+    border: 5px solid #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    width: auto;
+    background-color: white;
+    text-transform: uppercase;
+    margin-left: 5px;
+    border-radius: 0px;
+    opacity: 70%;
+  }
+  .btn:hover {
+    border: 5px solid #a3e1e4;
+    background-color: #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-left: 5px;
+    opacity: 70%;
+  }
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .reset {
+    font-size: 12px;
+    text-align: center;
+    color: #057b80;
+    text-decoration: none;
+  }
+  .reset:hover {
+    font-size: 15px;
+    color: #057b80;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  /*Cotizador*/
+  .fondo {
+    background-image: url(../img/fotocovid.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  .formCotizador {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    opacity: 100%;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+    padding: 10px;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #calcular {
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 70%;
+  }
+  #calcular:hover {
+    background-color: #a3e1e4;
+  }
+  .btnCalcular {
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  .btnCalcular:hover {
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  #solicitud {
+    font-size: 40px;
+    text-align: center;
+    color: #057b80;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+  }
+  /*Formulario*/
+  .fondo2 {
+    background-image: url(../img/contactanos2.png);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .center {
+    padding: 10px;
+    text-align: center;
+  }
+  .formContacto {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-left: 60%;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  select:focus {
+    outline: none;
+  }
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  #botonEnviar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  #botonEnviar:hover {
+    background-color: #a3e1e4;
+    color: black;
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  .botonLimpiar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    border: 1px solid black;
+  }
+  .botonLimpiar:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+    margin-left: 40%;
+  }
+  h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  /*Footer*/
+  .padre {
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 70px;
+  }
+  .hijo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .columna {
+    width: 33%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  .datos {
+    text-align: center;
+    margin: 0px;
+  }
+  .datos__texto--contenido {
+    text-transform: none;
+    letter-spacing: 0px;
+    display: inline;
+    text-align: center;
+  }
+  .textocontacto {
+    text-decoration: none;
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  a.textocontacto:hover {
+    color: #11a99d;
+    text-decoration: underline;
+  }
+  footer {
+    margin: 0px;
+  }
+}
+
+/* Responsive Medio Chico */
+@media screen and (min-width: 480px) and (max-width: 950px) {
+  /*Generales*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  /* Header*/
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    background-color: #f1ebeb;
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  }
+  .header__logo {
+    width: 150px;
+    margin: 0px;
+  }
+  .nav-link {
+    font-size: 17px;
+    letter-spacing: 2px;
+    width: auto;
+  }
+  .navbar-nav {
+    width: 900px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav-link:hover {
+    background-color: white;
+    opacity: 60%;
+  }
+  .active {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #a3e1e4;
+    opacity: 80%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  /*Multimedia*/
+  .portada {
+    width: 100%;
+  }
+  #imgwapp2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgmail2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgwapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgmail {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgubicacion {
+    width: 35px;
+    height: 40px;
+    padding: 5px;
+  }
+  /*Botones portada*/
+  .button1 {
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+  }
+  .button2 {
+    position: absolute;
+    bottom: 50%;
+    right: 15%;
+  }
+  .btn2 {
+    font-size: 10px;
+    color: black;
+    margin: 0 auto;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    color: black;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+  }
+  span {
+    font-size: 20px;
+    color: black;
+    margin: 0 auto;
+    background-color: #a3e1e4;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    display: block;
+    margin-top: 2px;
+  }
+  .btn2:hover {
+    color: black;
+  }
+  a span:hover {
+    color: white;
+    background-color: black;
+  }
+  /* Cards*/
+  .fondo3 {
+    background-image: url(../img/fondocovid1.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .card {
+    display: block;
+    font-size: 15px;
+    width: 80%;
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .card-group {
+    display: block;
+  }
+  .btn {
+    font-size: 15px;
+    border: 5px solid #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    width: auto;
+    background-color: white;
+    text-transform: uppercase;
+    margin-left: 5px;
+    border-radius: 0px;
+    opacity: 70%;
+  }
+  .btn:hover {
+    border: 5px solid #a3e1e4;
+    background-color: #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-left: 5px;
+    opacity: 70%;
+  }
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .reset {
+    font-size: 15px;
+    text-align: center;
+    color: #057b80;
+    text-decoration: none;
+  }
+  .reset:hover {
+    font-size: 15px;
+    color: #057b80;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  /*Cotizador*/
+  .fondo {
+    background-image: url(../img/fotocovid.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-bottom: 20px;
+  }
+  .formCotizador {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    opacity: 100%;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+    padding: 10px;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #calcular {
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 70%;
+  }
+  #calcular:hover {
+    background-color: #a3e1e4;
+  }
+  .btnCalcular {
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  .btnCalcular:hover {
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  #solicitud {
+    font-size: 30px;
+    text-align: center;
+    color: #057b80;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+  }
+  /*Formulario*/
+  .fondo2 {
+    background-image: url(../img/contactanos2.png);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .center {
+    padding: 10px;
+    text-align: center;
+  }
+  .formContacto {
+    padding: 1em;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-left: 60%;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  select:focus {
+    outline: none;
+  }
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  #botonEnviar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  #botonEnviar:hover {
+    background-color: #a3e1e4;
+    color: black;
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  .botonLimpiar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    border: 1px solid black;
+  }
+  .botonLimpiar:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+    margin-left: 40%;
+  }
+  h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  /*Footer*/
+  .padre {
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 70px;
+  }
+  .hijo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .columna {
+    width: 33%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  .datos {
+    text-align: center;
+    margin: 0px;
+  }
+  .datos__texto--contenido {
+    text-transform: none;
+    letter-spacing: 0px;
+    display: inline;
+    text-align: center;
+  }
+  .textocontacto {
+    text-decoration: none;
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  a.textocontacto:hover {
+    color: #11a99d;
+    text-decoration: underline;
+  }
+  footer {
+    margin: 0px;
+  }
+}
+
+/* Responsive Celular */
+@media screen and (max-width: 480px) {
+  /*Generales*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  /* Header*/
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    background-color: #f1ebeb;
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  }
+  .header__logo {
+    width: 150px;
+    margin: 0px;
+  }
+  .nav-link {
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: auto;
+    margin-right: 100px;
+  }
+  .nav-link:hover {
+    background-color: white;
+    opacity: 60%;
+  }
+  .active {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #a3e1e4;
+    opacity: 80%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  /*Multimedia*/
+  .portada {
+    width: 100%;
+  }
+  #imgwapp2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgmail2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  #imgwapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgmail {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #imgubicacion {
+    width: 35px;
+    height: 40px;
+    padding: 5px;
+  }
+  /*Botones portada*/
+  .button1 {
+    position: absolute;
+    bottom: 65%;
+    left: 5%;
+  }
+  .button2 {
+    position: absolute;
+    bottom: 65%;
+    right: 5%;
+  }
+  .btn2 {
+    font-size: 8px;
+    color: black;
+    margin: 0 auto;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    color: black;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+  }
+  span {
+    font-size: 13px;
+    color: black;
+    margin: 0 auto;
+    background-color: #a3e1e4;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0px solid;
+    opacity: 80%;
+    display: block;
+    margin-top: 2px;
+    font-weight: bold;
+  }
+  .btn2:hover {
+    color: black;
+  }
+  a span:hover {
+    color: white;
+    background-color: black;
+  }
+  /* Cards*/
+  .fondo3 {
+    background-image: url(../img/fondocovid1.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .card {
+    display: block;
+    font-size: 15px;
+    width: 80%;
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .card-group {
+    display: block;
+  }
+  .btn {
+    font-size: 15px;
+    border: 5px solid #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    width: auto;
+    background-color: white;
+    text-transform: uppercase;
+    margin-left: 5px;
+    border-radius: 0px;
+    opacity: 70%;
+  }
+  .btn:hover {
+    border: 5px solid #a3e1e4;
+    background-color: #a3e1e4;
+    color: black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-left: 5px;
+    opacity: 70%;
+  }
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .reset {
+    font-size: 15px;
+    text-align: center;
+    color: #057b80;
+    text-decoration: none;
+  }
+  .reset:hover {
+    font-size: 15px;
+    color: #057b80;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  /*Cotizador*/
+  .fondo {
+    background-image: url(../img/fotocovid.jpeg);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-bottom: 20px;
+  }
+  .formCotizador {
+    padding: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 100%;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+    padding: 10px;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #calcular {
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    opacity: 70%;
+  }
+  #calcular:hover {
+    background-color: #a3e1e4;
+  }
+  .btnCalcular {
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  .btnCalcular:hover {
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  #solicitud {
+    font-size: 30px;
+    text-align: center;
+    color: #057b80;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 20px;
+    opacity: 90%;
+  }
+  /*Formulario*/
+  .fondo2 {
+    background-image: url(../img/contactanos2.png);
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 20px;
+    margin-left: 0px;
+  }
+  .center {
+    padding: 10px;
+    text-align: center;
+    background-color: #f1ebeb;
+    padding: 10px;
+    color: black;
+    margin-bottom: 4px;
+    border-radius: 20px;
+  }
+  .formContacto {
+    padding: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  select:focus {
+    outline: none;
+  }
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  #botonEnviar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+  #botonEnviar:hover {
+    background-color: #a3e1e4;
+    color: black;
+    opacity: 70%;
+    border: 5px solid white;
+  }
+  .botonLimpiar {
+    margin: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    border: 1px solid black;
+  }
+  .botonLimpiar:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+  }
+  h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  /*Footer*/
+  .padre {
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: auto;
+  }
+  .hijo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .columna {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+  }
+  .datos {
+    text-align: center;
+    margin: 0px;
+  }
+  .datos__texto--contenido {
+    text-transform: none;
+    letter-spacing: 0px;
+    display: inline;
+    text-align: center;
+  }
+  .textocontacto {
+    text-decoration: none;
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+  }
+  a.textocontacto:hover {
+    color: #11a99d;
+    text-decoration: underline;
+  }
+  footer {
+    margin: 0px;
+  }
 }
 /*# sourceMappingURL=estilosSCSS.css.map */

@@ -61,3 +61,8 @@ $("#gracias").fadeOut("slow", function(){
   //devuelve por consola lo que esta en el array, convirtiendolo de JSON a String
   console.log(JSON.parse(localStorage.getItem("datospacientes")));
 });
+
+$("#botonLimpiar").click(function (e) { 
+  $("#gracias").fadeOut(500);  
+
+});

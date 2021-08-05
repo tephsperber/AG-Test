@@ -1,6 +1,5 @@
 //creamos una funcion para el cotizador, en el cual segun los datos ingresados, le devolvera un costo distinto
 function solicitudPaciente() {
-//$("#calcular").change((e) => {
   //defino variables con la informacion ingresada por el usuario en cada input
   let testIngresado = $("#miTest").val();
   let localidadIngresada = $("#miLocalidad").val();
@@ -46,6 +45,15 @@ function solicitudPaciente() {
 
 $("#solicitud").fadeOut("slow", function(){
   //Cuando termina de ocultarse el elemento lo mostramos nuevamente
-  $("#solicitud").fadeIn(1000);  
+  $("#solicitud").fadeIn(1000); 
 }); 
+
+  $(".hide").fadeOut("slow", function(){
+  $('#paginaContacto')
+  .css ("background-color", "#a3e1e4")
+
+  $(".hide").fadeIn(1000);  
+
+}); 
+
 }

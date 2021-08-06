@@ -14,7 +14,7 @@
 		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="scss/estilosSCSS.css">
+	<link rel="stylesheet" href="css/estilosSCSS.css">
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
 	<header>
 
 		<!-- Logo y Menu -->
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-sm navbar-light">
 			<div class="container-fluid">
 				<a class="navbar-brand left" href="index.html">
 					<img src="img/logo.png" alt="Logo" class="header__logo"></a>
@@ -44,7 +44,7 @@
 							<li class="nav-item">
 								<a class="nav-link " aria-current="page" href="index.html">Inicio</a>
 							</li>
-						
+
 							<li class="nav-item">
 								<a class="nav-link " aria-current="page" href="covid.html">COVID-19</a>
 							</li>
@@ -54,7 +54,7 @@
 							<li class="nav-item">
 								<a class="nav-link active" href="contacto.html">Contacto</a>
 							</li>
-</ul>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -63,72 +63,69 @@
 
 	<main>
 
-			<!-- Título de la página -->
-			<div id="formulario" class="fondo2"> 
+		<!-- Título de la página -->
+		<div id="formulario" class="fondo2">
 			<h1>Contactanos</h1>
 
 			<!-- Formulario de contacto -->
-			<form  class="formContacto">
+			<form class="formContacto">
 
-				<h5 class="center"><label for="Nombre" class="labelForm">Nombre:</label>
+				<h5 class="center"><label for="Nombre">Nombre:</label>
 					<input id="nombre" type="text" required class="inputForm center">
 				</h5>
 
-				<h5 class="center"><label for="Mail" class="labelForm">Mail:</label>
+				<h5 class="center"><label for="Mail">Mail:</label>
 					<input id="mail" type="text" required class="inputForm center">
 
-					<h5 class="center"><label for="Teléfono" class="labelForm">Teléfono:</label>
+					<h5 class="center"><label for="Teléfono">Teléfono:</label>
 						<input id="telefono" type="number" class="inputForm center">
 					</h5>
 
-					<button type="submit" value="Enviar" id="botonEnviar" class="botonEnviar"
-						>Enviar</button>
+					<button type="submit" value="Enviar" id="botonEnviar" class="botonEnviar">Enviar</button>
 
-					<button type="reset" value="Limpiar" id="botonLimpiar" class="botonLimpiar"
-						>Limpiar</button>
+					<button type="reset" value="Limpiar" id="botonLimpiar" class="botonLimpiar">Limpiar</button>
 			</form>
 
 
 
-		<!-- La respuesta al formulario de contacto -->
-		<p id="gracias" style="display: none"></p>
+			<!-- La respuesta al formulario de contacto -->
+			<p id="gracias" style="display: none"></p>
 
 		</div>
 
-	<!-- Contacto -->
-	<footer>
-		<div class="padre">
-			<div class="hijo">
+		<!-- Contacto -->
+		<footer>
+			<div class="padre">
+				<div class="hijo">
 
-				<div class="columna datos">
-					<p class="datos__texto--contenido"><img src="img/whatsapp.png" alt="wapp" id="imgwapp"
-							class="center2"><a href="https://api.whatsapp.com/send?phone=1550243549"
-							class="textocontacto">+54 9 11 5024 3549</a></p>
-				</div>
-				<div class="columna datos">
-					<p class="datos__texto--contenido"><img src="img/direccion.png" alt="ubicacion" id="imgubicacion"
-							class="center2"><a class="textocontacto">A domicilio</a></p>
-				</div>
-				<div class="columna datos">
-					<p class="datos__texto--contenido"><img src="img/mail.png" alt="mail" id="imgmail"
-							class="center2"><a href="mailto:infoagtest@gmail.com"
-							class="textocontacto">infoagtest@gmail.com</a></p>
-	</footer>
+					<div class="columna datos">
+						<p class="datos__texto--contenido"><img src="img/whatsapp.png" alt="wapp" id="imgwapp"><a
+								href="https://api.whatsapp.com/send?phone=1550243549" class="textocontacto">+54 9 11
+								5024 3549</a></p>
+					</div>
+					<div class="columna datos">
+						<p class="datos__texto--contenido"><img src="img/direccion.png" alt="ubicacion"
+								id="imgubicacion"><a class="textocontacto">A domicilio</a></p>
+					</div>
+					<div class="columna datos">
+						<p class="datos__texto--contenido"><img src="img/mail.png" alt="mail" id="imgmail"><a
+								href="mailto:infoagtest@gmail.com" class="textocontacto">infoagtest@gmail.com</a></p>
+		</footer>
 
-	<!-- Popper & Bootsrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-		integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-		integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-		crossorigin="anonymous"></script>
+		<!-- Popper & Bootsrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+			integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+			integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+			crossorigin="anonymous"></script>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-	<script src="js/variables.js"></script>
-	<script src="js/producto.js"></script>
-	<script src="js/solicitud.js"></script>
-	<script src="js/formulario.js"></script>
+		<script src="js/variables.js"></script>
+		<script src="js/producto.js"></script>
+		<script src="js/solicitud.js"></script>
+		<script src="js/formulario.js"></script>
 
 
 

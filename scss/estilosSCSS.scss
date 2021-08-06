@@ -78,6 +78,7 @@ h2 {
 
 .portada {
   width: 100%;
+  height: auto;
 }
 
 #imgwapp2 {
@@ -1036,7 +1037,7 @@ footer {
 }
 
 /* Responsive Celular */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 250px)and (max-width: 480px) {
   /*Generales*/
 
   * {
@@ -1065,9 +1066,10 @@ footer {
   }
 
   .header__logo {
-    width: 150px;
+    width: 100px;
     margin: 0px;
   }
+  
 
   .nav-link {
     font-size: 10px;

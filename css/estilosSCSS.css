@@ -84,6 +84,7 @@ h2 {
 /*Multimedia*/
 .portada {
   width: 100%;
+  height: auto;
 }
 
 #imgwapp2 {
@@ -989,7 +990,7 @@ footer {
 }
 
 /* Responsive Celular */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 250px) and (max-width: 480px) {
   /*Generales*/
   * {
     margin: 0;
@@ -1018,7 +1019,7 @@ footer {
             box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
   .header__logo {
-    width: 150px;
+    width: 100px;
     margin: 0px;
   }
   .nav-link {

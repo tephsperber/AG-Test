@@ -1,4 +1,4 @@
-//creamos una funcion para el cotizador, en el cual segun los datos ingresados, le devolvera un costo distinto
+//creamos una funcion para el cotizador, el cual segun los datos ingresados devolvera un costo distinto
 function solicitudPaciente() {
   //defino variables con la informacion ingresada por el usuario en cada input
   let testIngresado = $("#miTest").val();
@@ -43,17 +43,20 @@ function solicitudPaciente() {
     $("#solicitud").prepend(`<p> $ ${productosGBA[2].precio}</p>`);
   }
 
-$("#solicitud").fadeOut("slow", function(){
-  //Cuando termina de ocultarse el elemento lo mostramos nuevamente
-  $("#solicitud").fadeIn(1000); 
-}); 
+  //creamos una funcion para animar la respuesta del cotizador
+  $("#solicitud").fadeOut("slow", function () {
+    //cuando termina de ocultarse el elemento lo mostramos nuevamente
+    $("#solicitud").fadeIn(1000);
+  });
 
-  $(".hide").fadeOut("slow", function(){
-  $('#paginaContacto')
-  .css ("background-color", "#a3e1e4")
+  //creamos una funcion para animar el menu navbar cuando el cotizador responde
 
-  $(".hide").fadeIn(1000);  
+  //ocultamos las paginas del menu, excepto Contacto
+  $(".hide").fadeOut("slow", function () {
+    //le aplicamos un estilo distinto a Contacto
+    $("#paginaContacto").css("background-color", "#a3e1e4");
 
-}); 
-
+    //cuando termina de ocultarse el resto del menu, lo mostramos nuevamente
+    $(".hide").fadeIn(1000);
+  });
 }

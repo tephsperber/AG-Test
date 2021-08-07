@@ -1,4 +1,4 @@
-/*781px a 1200px*/
+
 
 /*Generales*/
 
@@ -680,6 +680,8 @@ footer {
     font-weight: bold;
   }
 
+    /* Titulos */
+
   h1 {
     font-size: 30px;
     color: grey;
@@ -915,6 +917,7 @@ footer {
   select:focus {
     outline: none;
   }
+
   textarea:focus,
   input:focus {
     outline: none;
@@ -1037,6 +1040,7 @@ footer {
 }
 
 /* Responsive Celular */
+
 @media screen and (min-width: 250px) and (max-width: 480px) {
   /*Generales*/
 
@@ -1083,6 +1087,8 @@ footer {
   .active {
     font-weight: bold;
   }
+
+    /* Titulos */
 
   h1 {
     font-size: 20px;
@@ -1266,6 +1272,7 @@ footer {
     font-weight: bold;
     text-decoration: underline;
   }
+
   /*Cotizador*/
 
   .fondo {
@@ -1398,10 +1405,12 @@ footer {
   select:focus {
     outline: none;
   }
+
   textarea:focus,
   input:focus {
     outline: none;
   }
+  
   #botonEnviar {
     margin: 20px;
     font-size: 15px;
@@ -1521,32 +1530,46 @@ footer {
 /*Responsive Mínimo */
 
 @media screen and (max-width: 250px) {
+  /* Header*/
+
   .header__logo {
     width: 100px;
     margin: 0px;
   }
-  .btn2 {
-    display: none;
-  }
+
+  /* Titulos */
 
   h1 {
     font-size: 10px;
   }
 
+  h2 {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  /*Multimedia*/
+
   #imgwapp {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    display: none;
   }
   #imgmail {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    display: none;
   }
   #imgubicacion {
-    width: 25px;
-    height: 30px;
-    padding: 5px;
+    display: none;
+  }
+
+  /*Botones portada*/
+
+  .btn2 {
+    display: none;
   }
 
   /* Cards*/
@@ -1614,110 +1637,7 @@ footer {
     text-decoration: underline;
   }
 
-  /*Footer*/
-
-  .padre {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    text-align: center;
-    height: auto;
-  }
-
-  .hijo {
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .columna {
-    width: 100%;
-    padding: 5px;
-    display: inline-block;
-    text-align: center;
-    border-bottom: 1px solid lightgrey;
-  }
-
-  .datos {
-    text-align: center;
-    margin: 0px;
-  }
-  .datosContacto {
-    text-transform: none;
-    letter-spacing: 0px;
-    display: inline;
-    text-align: center;
-  }
-
-  .textoContacto {
-    text-decoration: none;
-    color: grey;
-    padding: 2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: block;
-    font-size: 5px;
-  }
-
-  a.textoContacto:hover {
-    color: #11a99d;
-    text-decoration: underline;
-  }
-
-  footer {
-    margin: 0px;
-  }
-
-  #imgwapp {
-    display: none;
-  }
-  #imgmail {
-    display: none;
-  }
-  #imgubicacion {
-    display: none;
-  }
-
-  h2 {
-    font-size: 15px;
-    color: black;
-    font-weight: 500;
-    letter-spacing: 5px;
-    text-align: center;
-    margin: 10px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-  }
-
-  .inputForm2 {
-    background-color: #f8f8f8;
-    border-radius: 0.5em;
-    border: 1px solid #ccc;
-    display: block;
-    width: 100%;
-    font-size: 10px;
-    padding: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    margin: auto;
-  }
-
-  label {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 10px;
-    padding-bottom: 5px;
-    text-align: left;
-  }
-
-  .center {
-    padding: 5px;
-    text-align: center;
-    background-color: #f1ebeb;
-    color: black;
-    margin-bottom: 2px;
-    border-radius: 20px;
-  }
+  /*Cotizador*/
 
   .inputForm {
     background-color: #f8f8f8;
@@ -1730,49 +1650,6 @@ footer {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-  }
-
-  #gracias {
-    font-size: 10px;
-    text-align: center;
-    padding: 10px;
-    color: #057b80;
-    background-color: white;
-    opacity: 70%;
-    margin: 0px;
-  }
-
-  #botonEnviar {
-    margin: 10px;
-    font-size: 10px;
-    background-color: white;
-    color: black;
-    margin-top: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    padding: 10px;
-    text-transform: uppercase;
-    border: 5px solid #a3e1e4;
-  }
-
-  .botonLimpiar {
-    margin: 10px;
-    font-size: 10px;
-    background-color: white;
-    color: black;
-    margin-top: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    padding: 10px;
-    text-transform: uppercase;
-    opacity: 70%;
-    border: 1px solid black;
-  }
-
-  h3 {
-    font-size: 15px;
-    text-align: center;
-    color: black;
   }
 
   #calcular {
@@ -1818,4 +1695,133 @@ footer {
     border-radius: 20px;
     opacity: 90%;
   }
+
+  /*Formulario*/
+
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+  }
+
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+
+  .center {
+    padding: 5px;
+    text-align: center;
+    background-color: #f1ebeb;
+    color: black;
+    margin-bottom: 2px;
+    border-radius: 20px;
+  }
+
+  #gracias {
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+  }
+
+  #botonEnviar {
+    margin: 10px;
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px solid #a3e1e4;
+  }
+
+  .botonLimpiar {
+    margin: 10px;
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    border: 1px solid black;
+  }
+
+  h3 {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+  }
+}
+
+/*Footer*/
+
+.padre {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  text-align: center;
+  height: auto;
+}
+
+.hijo {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.columna {
+  width: 100%;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.datos {
+  text-align: center;
+  margin: 0px;
+}
+.datosContacto {
+  text-transform: none;
+  letter-spacing: 0px;
+  display: inline;
+  text-align: center;
+}
+
+.textoContacto {
+  text-decoration: none;
+  color: grey;
+  padding: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  font-size: 5px;
+}
+
+a.textoContacto:hover {
+  color: #11a99d;
+  text-decoration: underline;
+}
+
+footer {
+  margin: 0px;
 }

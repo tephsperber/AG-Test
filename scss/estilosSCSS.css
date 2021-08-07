@@ -1,12 +1,15 @@
+@charset "UTF-8";
 /*781px a 1200px*/
-
 /*Generales*/
-
 * {
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body {
@@ -16,15 +19,15 @@ body {
 }
 
 /* Header*/
-
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   width: 100%;
   z-index: 1001;
   background-color: #f1ebeb;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .header__logo {
@@ -42,12 +45,16 @@ header {
 }
 
 .navbar-nav {
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 .nav-link:hover {
   background-color: white;
   opacity: 60%;
 }
+
 .active {
   font-weight: bold;
 }
@@ -75,7 +82,6 @@ h2 {
 }
 
 /*Multimedia*/
-
 .portada {
   width: 100%;
   height: auto;
@@ -86,21 +92,25 @@ h2 {
   height: 40px;
   padding: 5px;
 }
+
 #imgmail2 {
   width: 40px;
   height: 40px;
   padding: 5px;
 }
+
 #imgwapp {
   width: 40px;
   height: 40px;
   padding: 5px;
 }
+
 #imgmail {
   width: 40px;
   height: 40px;
   padding: 5px;
 }
+
 #imgubicacion {
   width: 35px;
   height: 40px;
@@ -108,7 +118,6 @@ h2 {
 }
 
 /*Botones portada*/
-
 .button1 {
   position: absolute;
   top: 20%;
@@ -161,7 +170,6 @@ a span:hover {
 }
 
 /* Cards*/
-
 .fondo3 {
   background-image: url(../img/fondocovid1.jpeg);
   width: 100%;
@@ -171,6 +179,7 @@ a span:hover {
   height: auto;
   padding-bottom: 20px;
 }
+
 .card {
   display: inline-block;
   margin-right: 40px;
@@ -178,8 +187,8 @@ a span:hover {
   text-align: left;
   font-size: 15px;
   height: 400px;
-  box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
-    0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255);
+  -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+          box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
   color: black;
   border: 2px solid white;
   margin-top: 50px;
@@ -226,6 +235,7 @@ h5 {
   margin-left: 5px;
   opacity: 70%;
 }
+
 .reset {
   font-size: 15px;
   text-align: center;
@@ -241,7 +251,6 @@ h5 {
 }
 
 /*Cotizador*/
-
 .fondo {
   background-image: url(../img/fotocovid.jpeg);
   width: 100%;
@@ -276,6 +285,7 @@ h5 {
 select:focus {
   outline: none;
 }
+
 label {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -283,6 +293,7 @@ label {
   padding-bottom: 10px;
   text-align: left;
 }
+
 #calcular {
   margin: 20px;
   font-size: 20px;
@@ -328,7 +339,6 @@ label {
 }
 
 /*Formulario*/
-
 .fondo2 {
   background-image: url(../img/contactanos2.png);
   width: 100%;
@@ -343,6 +353,7 @@ label {
   padding: 10px;
   text-align: center;
 }
+
 .formContacto {
   padding: 1em;
   display: block;
@@ -368,6 +379,7 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
 #botonEnviar {
   margin: 20px;
   font-size: 15px;
@@ -431,10 +443,9 @@ h4 {
 }
 
 /*Footer*/
-
 .padre {
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   text-align: center;
   height: auto;
 }
@@ -456,6 +467,7 @@ h4 {
   text-align: center;
   margin: 0px;
 }
+
 .datos__texto--contenido {
   text-transform: none;
   letter-spacing: 0px;
@@ -482,10 +494,8 @@ footer {
 }
 
 /*Responsive Intermedio Especifico */
-
 @media screen and (min-width: 480px) and (max-width: 1050px) {
   /* Cards*/
-
   .fondo3 {
     background-image: url(../img/fondocovid1.jpeg);
     width: 100%;
@@ -498,8 +508,8 @@ footer {
   .card {
     display: block;
     font-size: 15px;
-    box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
-      0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255);
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
     color: black;
     text-align: center;
     margin-left: auto;
@@ -507,16 +517,13 @@ footer {
     width: 100%;
     height: auto;
   }
-
   .card-title {
     font-size: 25px;
     text-align: center;
   }
-
   .card-group {
     display: block;
   }
-
   .btn {
     font-size: 15px;
     border: 5px solid #a3e1e4;
@@ -529,7 +536,6 @@ footer {
     border-radius: 0px;
     opacity: 70%;
   }
-
   .btn:hover {
     border: 5px solid #a3e1e4;
     background-color: #a3e1e4;
@@ -546,23 +552,19 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-
   .reset {
     font-size: 15px;
     text-align: center;
     color: #057b80;
     text-decoration: none;
   }
-
   .reset:hover {
     font-size: 15px;
     color: #057b80;
     font-weight: bold;
     text-decoration: underline;
   }
-
   /*Cotizador*/
-
   .fondo {
     background-image: url(../img/fotocovid.jpeg);
     width: 100%;
@@ -571,7 +573,6 @@ footer {
     background-size: cover;
     height: auto;
   }
-
   .formCotizador {
     padding: 1em;
     display: block;
@@ -579,7 +580,6 @@ footer {
     text-align: center;
     opacity: 100%;
   }
-
   #calcular {
     margin: 20px;
     font-size: 20px;
@@ -590,11 +590,9 @@ footer {
     font-weight: 300;
     opacity: 70%;
   }
-
   #calcular:hover {
     background-color: #a3e1e4;
   }
-
   .btnCalcular {
     margin: 20px;
     font-size: 15px;
@@ -606,12 +604,10 @@ footer {
     text-transform: uppercase;
     border: 5px solid #a3e1e4;
   }
-
   .btnCalcular:hover {
     opacity: 70%;
     border: 5px solid white;
   }
-
   #solicitud {
     font-size: 40px;
     text-align: center;
@@ -626,40 +622,38 @@ footer {
 }
 
 /*Responsive Tablet */
-
 @media screen and (min-width: 480px) and (max-width: 780px) {
   /*Generales*/
-
   * {
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   body {
     font-size: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
   }
-
   /* Header*/
-
   header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     width: 100%;
     z-index: 1001;
     background-color: #f1ebeb;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
-
   .header__logo {
     width: 150px;
     margin: 0px;
   }
-
   .nav-link {
     font-size: 12px;
     letter-spacing: 2px;
@@ -668,9 +662,10 @@ footer {
     margin-right: 11px;
     margin-top: 5px;
   }
-
   .navbar-nav {
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .nav-link:hover {
     background-color: white;
@@ -679,7 +674,6 @@ footer {
   .active {
     font-weight: bold;
   }
-
   h1 {
     font-size: 30px;
     color: grey;
@@ -690,7 +684,6 @@ footer {
     opacity: 80%;
     padding: 20px;
   }
-
   h2 {
     font-size: 30px;
     color: black;
@@ -701,13 +694,10 @@ footer {
     text-transform: uppercase;
     margin-bottom: 50px;
   }
-
   /*Multimedia*/
-
   .portada {
     width: 100%;
   }
-
   #imgwapp2 {
     width: 30px;
     height: 30px;
@@ -733,21 +723,17 @@ footer {
     height: 30px;
     padding: 5px;
   }
-
   /*Botones portada*/
-
   .button1 {
     position: absolute;
     top: 20%;
     left: 15%;
   }
-
   .button2 {
     position: absolute;
     top: 20%;
     right: 15%;
   }
-
   .btn2 {
     font-size: 8px;
     color: black;
@@ -763,7 +749,6 @@ footer {
     text-align: center;
     font-weight: 500;
   }
-
   span {
     font-size: 15px;
     color: black;
@@ -776,18 +761,14 @@ footer {
     display: block;
     margin-top: 2px;
   }
-
   .btn2:hover {
     color: black;
   }
-
   a span:hover {
     color: white;
     background-color: black;
   }
-
   /*Cotizador*/
-
   .fondo {
     background-image: url(../img/fotocovid.jpeg);
     width: 100%;
@@ -797,7 +778,6 @@ footer {
     height: auto;
     padding-bottom: 20px;
   }
-
   .formCotizador {
     padding: 1em;
     display: block;
@@ -805,7 +785,6 @@ footer {
     text-align: center;
     opacity: 100%;
   }
-
   .inputForm2 {
     background-color: #f8f8f8;
     border-radius: 0.5em;
@@ -819,7 +798,6 @@ footer {
     margin: auto;
     padding: 10px;
   }
-
   label {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -837,11 +815,9 @@ footer {
     font-weight: 300;
     opacity: 70%;
   }
-
   #calcular:hover {
     background-color: #a3e1e4;
   }
-
   .btnCalcular {
     margin: 20px;
     font-size: 15px;
@@ -853,12 +829,10 @@ footer {
     text-transform: uppercase;
     border: 5px solid #a3e1e4;
   }
-
   .btnCalcular:hover {
     opacity: 70%;
     border: 5px solid white;
   }
-
   #solicitud {
     font-size: 30px;
     text-align: center;
@@ -870,9 +844,7 @@ footer {
     border-radius: 20px;
     opacity: 90%;
   }
-
   /*Formulario*/
-
   .fondo2 {
     background-image: url(../img/contactanos2.png);
     width: 100%;
@@ -881,7 +853,6 @@ footer {
     background-size: cover;
     height: auto;
   }
-
   .center {
     padding: 10px;
     text-align: center;
@@ -898,7 +869,6 @@ footer {
     text-align: center;
     margin-left: 0%;
   }
-
   .inputForm {
     background-color: #f8f8f8;
     border-radius: 0.5em;
@@ -911,7 +881,6 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
   }
-
   select:focus {
     outline: none;
   }
@@ -919,7 +888,6 @@ footer {
   input:focus {
     outline: none;
   }
-
   #botonEnviar {
     margin: 20px;
     font-size: 15px;
@@ -932,14 +900,12 @@ footer {
     text-transform: uppercase;
     border: 5px solid #a3e1e4;
   }
-
   #botonEnviar:hover {
     background-color: #a3e1e4;
     color: black;
     opacity: 70%;
     border: 5px solid white;
   }
-
   .botonLimpiar {
     margin: 20px;
     font-size: 15px;
@@ -953,19 +919,16 @@ footer {
     opacity: 70%;
     border: 1px solid black;
   }
-
   .botonLimpiar:hover {
     color: white;
     background-color: black;
     border: 1px solid white;
   }
-
   h3 {
     font-size: 25px;
     text-align: center;
     color: black;
   }
-
   #gracias {
     font-size: 20px;
     text-align: center;
@@ -975,46 +938,38 @@ footer {
     opacity: 70%;
     margin: 0px;
   }
-
   h4 {
     font-size: 30px;
     text-align: center;
   }
-
   /*Footer*/
-
   .padre {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     text-align: center;
     height: auto;
   }
-
   .hijo {
     margin: 0;
     text-align: center;
     width: 100%;
   }
-
   .columna {
     width: 30%;
     padding: 15px;
     display: inline-block;
     text-align: center;
   }
-
   .datos {
     text-align: center;
     margin: 0px;
   }
-
   .datos__texto--contenido {
     text-transform: none;
     letter-spacing: 0px;
     display: inline;
     text-align: center;
   }
-
   .textocontacto {
     text-decoration: none;
     color: grey;
@@ -1025,58 +980,53 @@ footer {
     display: block;
     font-size: 8px;
   }
-
   a.textocontacto:hover {
     color: #11a99d;
     text-decoration: underline;
   }
-
   footer {
     margin: 0px;
   }
 }
 
 /* Responsive Celular */
-@media screen and (min-width: 250px)and (max-width: 480px) {
+@media screen and (min-width: 250px) and (max-width: 480px) {
   /*Generales*/
-
   * {
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   body {
     font-size: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
   }
-
   /* Header*/
-
   header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     width: 100%;
     z-index: 1001;
     background-color: #f1ebeb;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
-
   .header__logo {
     width: 100px;
     margin: 0px;
   }
-  
-
   .nav-link {
     font-size: 10px;
     letter-spacing: 2px;
     padding: 2px;
   }
-
   .nav-link:hover {
     background-color: white;
     opacity: 60%;
@@ -1084,7 +1034,6 @@ footer {
   .active {
     font-weight: bold;
   }
-
   h1 {
     font-size: 20px;
     color: grey;
@@ -1105,13 +1054,10 @@ footer {
     text-transform: uppercase;
     margin-bottom: 50px;
   }
-
   /*Multimedia*/
-
   .portada {
     width: 100%;
   }
-
   #imgwapp2 {
     width: 30px;
     height: 30px;
@@ -1137,21 +1083,17 @@ footer {
     height: 40px;
     padding: 5px;
   }
-
   /*Botones portada*/
-
   .button1 {
     position: absolute;
     top: 15%;
     left: 15%;
   }
-
   .button2 {
     position: absolute;
     top: 15%;
     right: 15%;
   }
-
   .btn2 {
     font-size: 6px;
     color: black;
@@ -1167,7 +1109,6 @@ footer {
     text-align: center;
     font-weight: 500;
   }
-
   span {
     font-size: 10px;
     color: black;
@@ -1181,18 +1122,14 @@ footer {
     margin-top: 2px;
     font-weight: bold;
   }
-
   .btn2:hover {
     color: black;
   }
-
   a span:hover {
     color: white;
     background-color: black;
   }
-
   /* Cards*/
-
   .fondo3 {
     background-image: url(../img/fondocovid1.jpeg);
     width: 100%;
@@ -1205,8 +1142,8 @@ footer {
   .card {
     display: block;
     font-size: 15px;
-    box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
-      0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255);
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
     color: black;
     text-align: center;
     margin-left: auto;
@@ -1214,16 +1151,13 @@ footer {
     width: 100%;
     height: auto;
   }
-
   .card-title {
     font-size: 25px;
     text-align: center;
   }
-
   .card-group {
     display: block;
   }
-
   .btn {
     font-size: 15px;
     border: 5px solid #a3e1e4;
@@ -1236,7 +1170,6 @@ footer {
     border-radius: 0px;
     opacity: 70%;
   }
-
   .btn:hover {
     border: 5px solid #a3e1e4;
     background-color: #a3e1e4;
@@ -1253,14 +1186,12 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-
   .reset {
     font-size: 15px;
     text-align: center;
     color: #057b80;
     text-decoration: none;
   }
-
   .reset:hover {
     font-size: 15px;
     color: #057b80;
@@ -1268,7 +1199,6 @@ footer {
     text-decoration: underline;
   }
   /*Cotizador*/
-
   .fondo {
     background-image: url(../img/fotocovid.jpeg);
     width: 100%;
@@ -1278,7 +1208,6 @@ footer {
     height: auto;
     padding-bottom: 20px;
   }
-
   .formCotizador {
     padding: 1em;
     display: block;
@@ -1286,7 +1215,6 @@ footer {
     text-align: center;
     opacity: 100%;
   }
-
   .inputForm2 {
     background-color: #f8f8f8;
     border-radius: 0.5em;
@@ -1300,7 +1228,6 @@ footer {
     margin: auto;
     padding: 10px;
   }
-
   label {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -1318,11 +1245,9 @@ footer {
     font-weight: 300;
     opacity: 70%;
   }
-
   #calcular:hover {
     background-color: #a3e1e4;
   }
-
   .btnCalcular {
     margin: 20px;
     font-size: 15px;
@@ -1334,12 +1259,10 @@ footer {
     text-transform: uppercase;
     border: 5px solid #a3e1e4;
   }
-
   .btnCalcular:hover {
     opacity: 70%;
     border: 5px solid white;
   }
-
   #solicitud {
     font-size: 30px;
     text-align: center;
@@ -1351,9 +1274,7 @@ footer {
     border-radius: 20px;
     opacity: 90%;
   }
-
   /*Formulario*/
-
   .fondo2 {
     background-image: url(../img/contactanos2.png);
     width: 100%;
@@ -1364,7 +1285,6 @@ footer {
     padding-bottom: 20px;
     margin-left: 0px;
   }
-
   .center {
     padding: 10px;
     text-align: center;
@@ -1374,7 +1294,6 @@ footer {
     margin-bottom: 4px;
     border-radius: 20px;
   }
-
   .formContacto {
     padding: 1em;
     display: block;
@@ -1382,7 +1301,6 @@ footer {
     text-align: center;
     margin-left: 0px;
   }
-
   .inputForm {
     background-color: #f8f8f8;
     border-radius: 0.5em;
@@ -1395,7 +1313,6 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
   }
-
   select:focus {
     outline: none;
   }
@@ -1415,14 +1332,12 @@ footer {
     text-transform: uppercase;
     border: 5px solid #a3e1e4;
   }
-
   #botonEnviar:hover {
     background-color: #a3e1e4;
     color: black;
     opacity: 70%;
     border: 5px solid white;
   }
-
   .botonLimpiar {
     margin: 20px;
     font-size: 15px;
@@ -1436,19 +1351,16 @@ footer {
     opacity: 70%;
     border: 1px solid black;
   }
-
   .botonLimpiar:hover {
     color: white;
     background-color: black;
     border: 1px solid white;
   }
-
   h3 {
     font-size: 25px;
     text-align: center;
     color: black;
   }
-
   #gracias {
     font-size: 20px;
     text-align: center;
@@ -1458,27 +1370,22 @@ footer {
     opacity: 70%;
     margin: 0px;
   }
-
   h4 {
     font-size: 30px;
     text-align: center;
   }
-
   /*Footer*/
-
   .padre {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     text-align: center;
     height: auto;
   }
-
   .hijo {
     margin: 0;
     text-align: center;
     width: 100%;
   }
-
   .columna {
     width: 100%;
     padding: 5px;
@@ -1486,7 +1393,6 @@ footer {
     text-align: center;
     border-bottom: 1px solid lightgrey;
   }
-
   .datos {
     text-align: center;
     margin: 0px;
@@ -1497,7 +1403,6 @@ footer {
     display: inline;
     text-align: center;
   }
-
   .textocontacto {
     text-decoration: none;
     color: grey;
@@ -1508,19 +1413,16 @@ footer {
     display: block;
     font-size: 8px;
   }
-
   a.textocontacto:hover {
     color: #11a99d;
     text-decoration: underline;
   }
-
   footer {
     margin: 0px;
   }
 }
 
 /*Responsive Mínimo */
-
 @media screen and (max-width: 250px) {
   .header__logo {
     width: 100px;
@@ -1529,11 +1431,9 @@ footer {
   .btn2 {
     display: none;
   }
-
   h1 {
     font-size: 10px;
   }
-
   #imgwapp {
     width: 30px;
     height: 30px;
@@ -1549,9 +1449,7 @@ footer {
     height: 30px;
     padding: 5px;
   }
-
   /* Cards*/
-
   .fondo3 {
     background-image: url(../img/fondocovid1.jpeg);
     width: 100%;
@@ -1566,20 +1464,18 @@ footer {
     text-align: left;
     font-size: 10px;
     height: auto;
-    box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
-      0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255);
+    -webkit-box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
+            box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
     color: black;
     border: 2px solid white;
     margin-top: 10px;
     margin-bottom: 30px;
   }
-
   .card-title {
     font-size: 15px;
     margin-bottom: 20px;
     text-align: center;
   }
-
   .btn {
     font-size: 10px;
     border: 5px solid #a3e1e4;
@@ -1591,7 +1487,6 @@ footer {
     border-radius: 0px;
     opacity: 70%;
   }
-
   .btn:hover {
     border: 5px solid #a3e1e4;
     background-color: #a3e1e4;
@@ -1607,30 +1502,24 @@ footer {
     color: #057b80;
     text-decoration: none;
   }
-
   .reset:hover {
     font-size: 15px;
     color: #057b80;
     font-weight: bold;
     text-decoration: underline;
   }
-
-
   /*Footer*/
-
   .padre {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     text-align: center;
     height: auto;
   }
-
   .hijo {
     margin: 0;
     text-align: center;
     width: 100%;
   }
-
   .columna {
     width: 100%;
     padding: 5px;
@@ -1638,7 +1527,6 @@ footer {
     text-align: center;
     border-bottom: 1px solid lightgrey;
   }
-
   .datos {
     text-align: center;
     margin: 0px;
@@ -1649,7 +1537,6 @@ footer {
     display: inline;
     text-align: center;
   }
-
   .textocontacto {
     text-decoration: none;
     color: grey;
@@ -1660,85 +1547,71 @@ footer {
     display: block;
     font-size: 5px;
   }
-
   a.textocontacto:hover {
     color: #11a99d;
     text-decoration: underline;
   }
-
   footer {
     margin: 0px;
   }
-
-#imgwapp {
- display: none;
+  #imgwapp {
+    display: none;
+  }
+  #imgmail {
+    display: none;
+  }
+  #imgubicacion {
+    display: none;
+  }
+  h2 {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
+  }
 }
-#imgmail {
-  display: none;
-
-}
-#imgubicacion {
-  display: none;
-
-}
-
-
-h2 {
-  font-size: 15px;
-  color: black;
-  font-weight: 500;
-  letter-spacing: 5px;
-  text-align: center;
-  margin: 10px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-
-.inputForm2 {
-  background-color: #f8f8f8;
-  border-radius: 0.5em;
-  border: 1px solid #ccc;
-  display: block;
-  width: 100%;
-  font-size: 10px;
-  padding: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  margin: auto;
-}
-
-label {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  padding-bottom: 5px;
-  text-align: left;
-}
-
-
-.inputForm {
-  background-color: #f8f8f8;
-  border-radius: 0.5em;
-  border: 1px solid #ccc;
-  display: block;
-  width: 100%;
-  font-size: 10px;
-  padding: 5px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-}
-
-#gracias {
-  font-size: 20px;
-  text-align: center;
-  padding: 10px;
-  color: #057b80;
-  background-color: white;
-  opacity: 70%;
-  margin: 0px;
-}
-
-}
-
+/*# sourceMappingURL=estilosSCSS.css.map */

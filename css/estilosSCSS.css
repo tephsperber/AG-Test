@@ -1518,17 +1518,17 @@ footer {
     text-decoration: underline;
   }
   /*Cotizador*/
-  .inputForm {
+  .inputForm2 {
     background-color: #f8f8f8;
     border-radius: 0.5em;
     border: 1px solid #ccc;
     display: block;
     width: 100%;
-    font-size: 8px;
+    font-size: 10px;
     padding: 5px;
-    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    margin: auto;
   }
   #calcular {
     margin: 20px;
@@ -1570,17 +1570,17 @@ footer {
     opacity: 90%;
   }
   /*Formulario*/
-  .inputForm2 {
+  .inputForm {
     background-color: #f8f8f8;
     border-radius: 0.5em;
     border: 1px solid #ccc;
     display: block;
     width: auto;
-    font-size: 10px;
+    font-size: 8px;
     padding: 5px;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    margin: auto;
   }
   label {
     font-family: "Montserrat", sans-serif;

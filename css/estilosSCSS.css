@@ -1457,7 +1457,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .card {
     display: inline-block;
@@ -1468,8 +1468,8 @@ footer {
             box-shadow: inset 0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white;
     color: black;
     border: 2px solid white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .card-title {
     font-size: 15px;
@@ -1562,6 +1562,56 @@ footer {
   }
   #imgubicacion {
     display: none;
+  }
+  h2 {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .inputForm2 {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: auto;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  .inputForm {
+    background-color: #f8f8f8;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  #gracias {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #057b80;
+    background-color: white;
+    opacity: 70%;
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=estilosSCSS.css.map */

@@ -659,7 +659,7 @@ footer {
   }
 
   .nav-link {
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 2px;
     width: auto;
     margin-left: 11px;
@@ -1077,6 +1077,7 @@ footer {
     letter-spacing: 2px;
     padding: 2px;
   }
+
 
   .nav-link:hover {
     background-color: white;
@@ -1534,6 +1535,12 @@ footer {
   .header__logo {
     width: 100px;
     margin: 0px;
+  }
+
+  .nav-link {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 2px;
   }
 
   /* Titulos */

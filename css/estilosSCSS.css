@@ -1545,7 +1545,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
-    font-size: 8px;
+    font-size: 5px;
   }
   a.textocontacto:hover {
     color: #11a99d;
@@ -1553,6 +1553,15 @@ footer {
   }
   footer {
     margin: 0px;
+  }
+  #imgwapp {
+    display: none;
+  }
+  #imgmail {
+    display: none;
+  }
+  #imgubicacion {
+    display: none;
   }
 }
 /*# sourceMappingURL=estilosSCSS.css.map */
